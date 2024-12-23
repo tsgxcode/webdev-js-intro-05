@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Introduction to JS: Arrays</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" class="link">Concept</a></li>
+                <li class="nav-item"><a href="./assignment.html" class="link">Assignment</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        
+        <section class="concept">
+            <h2 class="title">Concept: Arrays</h2>
+            <p class="paragraph">In the last assignment, I mentioned the complex data type, Object. This will be your first step into what objects are because an Array is a type of Object in JavaScript.
+            </p>
+
+            <h3 class="sub-title">What’s an Array?</h3>
+            <p class="paragraph">Simply put, an array is just a collection or list of values stored in a variable. Imagine you’re grocery shopping and are missing a couple of ingredients for your fruit cake recipe. You would make a list and buy those items. The following code block shows how you would create that list in JavaScript.</p>
+
+
+<code class="block-code">let shoppingList = ["Apricots", "Pineapple", "Raisins"];
+</code>
+
+            <p class="paragraph">Now that an array has been created, how do we access the values inside it? If you can’t access the values, what is the point? When grocery shopping you look at each item in the list, retrieve the item, and remove it from the list. Let’s take a look at the first step of grocery shopping - looking at the first item on the list.</p>
+
+<code class="block-code">console.log(shoppingList[0]);    // Output: "Apricots"
+</code>
+            
+            <p class="paragraph">After seeing this example, you may be wondering what is going on. We first have the array name, but we also have a number inside opening and closing brackets. Also, why are we using the number 0 to access the first value or element in the array? The number inside the brackets is called the index. The index of an array always starts with zero. So if we have an array with 4 items, the indices available are 0, 1, 2, 3. With this in mind, the size or length of the array is n - 1 where n = number of elements.
+            </p>
+
+            <p class="paragraph">So let's continue our shopping. We found our first item and are ready to remove it from our list. So how do we do that in our code? The Array object has methods (functions that are specific to an object) that help us work with our arrays. Lets remove the first item with the <code class="inline-code">shift()</code> method.</p>
+
+<code class="block-code">shoppingList.shift();    // Removing the first element with the shift method
+console.log(shoppingList);   // Output: ["Pineapple", "Raisins"]
+</code>
+
+            <p class="paragraph">
+                We now have successfully removed the first item from our list. As we continue, we remember an item that we need. Normally, we would just write it down at the end of our list. In code, it would look like this:
+            </p>
+
+<code class="block-code">shoppingList.push("Cranberries");    // Add an element to the end of our array with the push method
+console.log(shoppingList);   // Output: ["Pineapple", "Raisins", "Cranberries"]
+</code>            
+            
+            <p class="paragraph">
+                There are more methods on the Array object such as <code class="inline-code">pop()</code>, which removes the last element of the list.
+            </p>
+            
+            <p class="paragraph">
+                It is highly recommended to read through the <a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">MDN documentation on Arrays.</a> before continuing.
+            </p>
+
+            
+            <h3 class="sub-title">Experiment Time</h3>
+            
+            <p class="paragraph">Open <code class="inline-code">index.js</code> and try the following:</p>
+            
+            <ul class="list">
+                <li class="list-item">Write any questions that may arise in this experiment and we can discuss them in class.</li>
+                <li class="list-item">Log your arrays to the console.</li>
+                <li class="list-item">Create an array that holds different data types and log it the console. What happens?</li>
+                <li class="list-item">Log the typeof to one array to the console. What is returned?</li>
+                <li class="list-item">Remove an item from your arrays.</li>
+                <li class="list-item">Add an item from your arrays.</li>
+                <li class="list-item">Change the value of an element in each array.</li>
+            </ul>
+
+            <p class="paragraph">Once you are done experimenting, comment out your code.</p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- include the script at the end of the body -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
