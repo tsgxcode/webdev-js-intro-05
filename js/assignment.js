@@ -1,5 +1,8 @@
 "use strict";
 
+let shiftValue;
+let popValue;
+
 const todos = [
     "Wash the dishes",
     "Clean the gutters",
